@@ -1,13 +1,13 @@
 # Node.js
 
-Node (or more formally Node.js) is an open-source, cross-platform, runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript. The runtime is intended for use outside of a browser context (i.e. running directly on a computer or server OS). As such, the environment omits browser-specific JavaScript APIs and adds support for more traditional OS APIs including HTTP and file system libraries.
-
+노드(Node.js)란 자바스크립트를 이용하여 서버 어플리케이션을 만들고 사용할 수 있도록 해주는 자바스크립트 환경입니다. 브라우저 이외의 곳(예를 들면, 컴퓨터 서버 OS)에서 사용할 수 있도록 만들어진 자바스크립트 환경입니다. 그래서 노드는 브라우저에 국한된 자바스크립트 관련 API들을 생략하고 조금 더 전통적인 OS 관련 API(예를 들면, HTTP 관련 혹은 파일 시스템 관련 API)를 제공합니다.
 
 ## 서버 개발에 있어서 노드의 장점
 
-Great performance! Node has been designed to optimize throughput and scalability in web applications and is a very good match for many common web-development problems (e.g. real-time web applications).
-Code is written in "plain old JavaScript", which means that less time is spent dealing with "context shift" between languages when you're writing both browser and web server code.
-JavaScript is a relatively new programming language and benefits from improvements in language design when compared to other traditional web-server languages (e.g. Python, PHP, etc.) Many other new and popular languages compile/convert into JavaScript so you can also use CoffeeScript, ClosureScript, Scala, LiveScript, etc.
-The node package manager (NPM) provides access to hundreds of thousands of reusable packages. It also has best-in-class dependency resolution and can also be used to automate most of the build toolchain.
-It is portable, with versions running on Microsoft Windows, OS X, Linux, Solaris, FreeBSD, OpenBSD, WebOS, and NonStop OS. Furthermore, it is well-supported by many web hosting providers, that often provide specific infrastructure and documentation for hosting Node sites.
-It has a very active third party ecosystem and developer community, with lots of people who are willing to help.
+뭐니 뭐니해도 뛰어난 성능. 노드란 웹 개발에 있어 중요한 장점이 있습니다. 디자인 단계에서부터 여러가지 현대적인 웹 개발의 문제점들(예를 들면 실시간 지원)을 고려하였습니다.
+
+그리고 자바스크립트로 서버를 구현한다는 자체가 주는 장점도 굉장히 큽니다. 프론트엔드와 백엔드를 같은 언어로 만든다는 점은 개발자들에게 매우 큰 장점입니다. 자바스크립트는 비교적 최근에 트렌드를 이끌기 시작한 프로그래밍 언어이기 때문에, 다른 전통있는 언어와는 다르게 굉장히 현대적인 구조와 디자인을 제공합니다. 인기를 끄는 다른 언어들을 이용하여 자바스크립트를 쓰는 것 또한 가능합니다.(CoffeeScript, ClosureScript, Scala, LiveScript 등)
+
+Node Pacage Manager(NPM)은 재사용 가능한 수백만 혹은 수천만개의 소프트웨어 패키지에 대한 접근을 가능하게 해줍니다. 그리고 또한 매우 뛰어난 dependency resolution 시스템을 보유하고 있고, 빌드 과정을 자동화할 수 있는 기능들도 내재되어 있습니다.
+
+또한 노드는 윈도우, Mac OS, Linux, Solaris, FreeBSD 등에서 실행시킬 수 있는 버젼들이 준비되어 있고, 수많은 웹 호스팅 업체들에서도 지원하고 있으며 굉장히 뛰어나고 상세한 문서를 제공합니다. 그리고 가장 중요한 점은, 노드 관련 개발자 커뮤니티가 굉장히 활성화되어 있다는 점입니다. 무슨 문제라 하더라도 누군가는 당신을 도와줄 수 있습니다.
