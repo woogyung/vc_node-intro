@@ -1,0 +1,119 @@
+html,
+body {
+  background-color: pink;
+  padding: 20px;
+}
+em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 10px;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+h3 {
+  font-size: 26px;
+}
+ul {
+  padding: 0;
+}
+.horizontal-list {
+  width: 100%;
+}
+.horizontal-list > li {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+.horizontal-list > li.selection {
+  background-color: yellow;
+}
+.horizontal-list > li.selection.selected {
+  background-color: blue;
+  color: white;
+}
+.horizontal-list > li.list-item {
+  background-color: white;
+}
+.horizontal-list > li.list-item.selected {
+  background-color: blue;
+  color: white;
+}
+#navigation-menu ul {
+  list-style: none;
+}
+#navigation-menu li {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#navigation-menu li.selected {
+  background-color: blue;
+  color: white;
+}
+#user-list-view {
+  display: none;
+}
+.user-form {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  padding: 10px;
+  display: none;
+  background-color: white;
+}
+.user-form.error {
+  border: 3px solid red;
+}
+.user-form button {
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+}
+.user-form button.submit {
+  background-color: green;
+}
+.user-form button.cancel {
+  background-color: grey;
+}
+.user-form button.close {
+  display: none;
+  background-color: red;
+}
+.success-message {
+  color: blue;
+  margin-top: 10px;
+  display: none;
+}
+.user-info-field label {
+  font-size: 16px;
+}
+.user-info-field input {
+  height: 30px;
+  width: 150px;
+  margin: 10px;
+}
+.user-info-field input:disabled {
+  background-color: lightgrey;
+}

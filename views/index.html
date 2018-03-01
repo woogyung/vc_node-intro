@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vanilla Coding - UMS</title>
+  </head>
+  <body>
+    <h1>바닐라코딩 사용자 관리 페이지</h1>
+    <div id="navigation-다enu">
+      <ul>
+        <li class="selected" data-route="create">사용자 생성</li>
+        <li data-route="list">사용자 리스트</li>
+      </ul>
+    </div>
+    <div id="create-user-view">
+      <h2>1. 사용자 만들기</h2>
+      <p>아래 사용자 종류를 클릭하여 사용자를 만들수 있습니다.</p>
+      <ul class="horizontal-list new-user-selection">
+        <li class="selection" data-type="0">일반인</li>
+        <li class="selection" data-type="1">컴공학생</li>
+        <li class="selection" data-type="2">웹개발자</li>
+        <li class="selection" data-type="3">웹디자이너</li>
+        <li class="selection" data-type="4">사장님</li>
+      </ul>
+      <div class="user-form create">
+        <h3>사용자 만들기</h3>
+        <div class="user-info-field">
+          <label for="type">종류</label>
+          <select>
+            <option value="0">일반인</option>
+            <option value="1">컴공학생</option>
+            <option value="2">웹개발자</option>
+            <option value="3">웹디자이너</option>
+            <option value="4">사장님</option>
+          </select>
+        </div>
+        <div class="user-info-field">
+          <label for="username">이름</label>
+          <input type="text" id="username" placeholder="이름을 적어라.">
+        </div>
+        <div class="user-info-field">
+          <label for="nickname">별명</label>
+          <input type="text" id="nickname" placeholder="별명을 적어라.">
+        </div>
+        <button class="button submit">생성</button>
+        <button class="button cancel">취소</button>
+        <button class="button close">닫기</button>
+        <div class="success-message">
+          사용자를 성공적으로 생성했습니다.
+        </div>
+      </div>
+    </div>
+    <div id="user-list-view">
+      <h2>2. 현재 사용자 목록</h2>
+      <p>현재까지 생성된 사용자들의 목록입니다. <em>수정</em>이 가능합니다.</p>
+      <ul class="horizontal-list existing-user-list"></ul>
+      <div class="user-form update">
+        <h3>사용자 수정</h3>
+        <div class="user-info-field">
+          <label for="type">종류</label>
+          <select>
+            <option value="0">일반인</option>
+            <option value="1">컴공학생</option>
+            <option value="2">웹개발자</option>
+            <option value="3">웹디자이너</option>
+            <option value="4">사장님</option>
+          </select>
+        </div>
+        <div class="user-info-field">
+          <label for="username">이름</label>
+          <input type="text" id="username" placeholder="이름을 적어라.">
+        </div>
+        <div class="user-info-field">
+          <label for="nickname">별명</label>
+          <input type="text" id="nickname" placeholder="별명을 적어라.">
+        </div>
+        <button class="button submit">수정</button>
+        <button class="button cancel">취소</button>
+        <button class="button close">닫기</button>
+        <div class="success-message">
+          사용자를 성공적으로 수정했습니다.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

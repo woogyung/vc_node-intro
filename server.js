@@ -1,25 +1,25 @@
-// Express 모듈 수입
 var express = require('express');
 
-// 서버 생성
 var app = express();
 
-app.get('/', function (req, res) {
-  const data = {
-    name: '내가 nodejs다!!!',
-    timestamp: new Date()
-  };
+app.use(express.static('public'));
 
-  res.status(200).json(data);
+app.get('/', (req, res) => {
+  res.send({
+    message: 'hello vanilla'
+  });
 });
 
-// 포트 8000 사용
-app.listen(8000, function() {
-  console.log('Server running at http://127.0.0.1:8000/');
+var PORT_NUMBER = 8000;
+
+app.listen(PORT_NUMBER, () => {
+  console.log(`Server running at http://127.0.0.1:${PORT_NUMBER}/`);
 });
 
 // 1. GET /status-check
 
 // 2. GET /main
 
-// 3. GET /top-stories/{SECTION_NAME}
+// 3. GET ums
+
+// 4. view engine
