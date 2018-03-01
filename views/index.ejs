@@ -2,10 +2,15 @@
   <head>
     <meta charset="utf-8">
     <title>Vanilla Coding - UMS</title>
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
   </head>
   <body>
-    <h1>바닐라코딩 사용자 관리 페이지</h1>
-    <div id="navigation-다enu">
+    <h1><%= title %></h1>
+    <h2><%= message %></h2>
+    <% if (user) { %>
+      <h3><%= user.name %></h3>
+    <% } %>
+    <div id="navigation-menu">
       <ul>
         <li class="selected" data-route="create">사용자 생성</li>
         <li data-route="list">사용자 리스트</li>
@@ -81,5 +86,6 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="/javascript/index.js"></script>
   </body>
 </html>
