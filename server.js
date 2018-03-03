@@ -25,14 +25,14 @@ app.listen(PORT_NUMBER, () => {
   console.log(`Server running at http://localhost:${PORT_NUMBER}/`);
 });
 
-// 1. Middlewares
+// 1. Signup
 
-// 2. Signup
-
-// 3. Database
+// 2. Database
 //    - Mongoose
 //    - Database Schema Design
 
-// 4. Login
+// 3. Login
 
-// 5. Json Web Tokens - JWT
+// 4. Json Web Tokens - JWT
+
+// 5. Middlewares
